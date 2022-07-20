@@ -90,8 +90,6 @@
     width: 100%;
   }
 
-  // &__nav {}
-
   &__nav-list {
     display: flex;
     justify-content: space-between;
@@ -158,6 +156,7 @@
   @media (max-width: 1024px) {
     &__content {
       gap: 12px;
+      padding: 10px 0;
     }
 
     &__logo {
@@ -242,10 +241,6 @@
 
     &__btn {
       display: none;
-    }
-
-    &__content {
-      padding-top: 16px;
     }
 
     &__right {

@@ -461,6 +461,7 @@ button {
 @media (max-width: 1024px) {
   .header__content {
     gap: 12px;
+    padding: 10px 0;
   }
   .header__logo {
     width: auto;
@@ -532,9 +533,6 @@ button {
   }
   .header__btn {
     display: none;
-  }
-  .header__content {
-    padding-top: 16px;
   }
   .header__right {
     display: block;
