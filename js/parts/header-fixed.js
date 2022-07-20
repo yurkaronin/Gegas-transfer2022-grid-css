@@ -1,5 +1,5 @@
 window.onscroll = function() {
-  if(window.pageYOffset > 300) {
+  if(window.pageYOffset > 600) {
     document.body.classList.add('header-fixed');
   } else {
     document.body.classList.remove('header-fixed');

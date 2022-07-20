@@ -1,0 +1,56 @@
+.btn-menu {
+  display: none;
+
+  @media (max-width: 1024px) {
+    position: relative;
+    height: 45px;
+    width: 45px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid;
+    border-color: var(--col-2);
+    display: flex;
+    transition: all 0.3s;
+
+    span,
+    span::after,
+    span::before {
+      position: absolute;
+      height: 2px;
+      background-color: var(--col-2);
+      width: 32px;
+      transition: all 0.3s;
+    }
+
+    span::after,
+    span::before {
+      content: "";
+      display: block;
+
+    }
+
+    span::before {
+      -webkit-transform: translateY(-11px);
+      transform: translateY(-11px);
+    }
+
+    span::after {
+      -webkit-transform: translateY(11px);
+      transform: translateY(11px);
+    }
+  }
+
+  @media (max-width: 768px) {
+    border-width: 1px;
+
+    span,
+    span::after,
+    span::before {
+      height: 1px;
+    }
+
+  }
+
+}

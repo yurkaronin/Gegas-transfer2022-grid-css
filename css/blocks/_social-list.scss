@@ -1,0 +1,43 @@
+.social-list {
+  display: grid;
+  grid-template-columns: repeat(4, 35px);
+  gap: 16px;
+  justify-content: center;
+  max-width: max-content;
+
+  &__link {
+    display: flex;
+
+    path {
+      transition: all 0.2s;
+    }
+
+    &:hover {
+      svg path {
+        fill: var(--col-3);
+      }
+    }
+
+    // modify 
+    &--viber:hover {
+      svg path {
+        fill: var(--soc-1);
+      }
+    }
+    &--whatsapp:hover {
+      svg path {
+        fill: var(--soc-2);
+      }
+    }
+    &--telegram:hover {
+      svg path {
+        fill: var(--soc-3);
+      }
+    }
+    &--instagram:hover {
+      svg path {
+        fill: var(--soc-4);
+      }
+    }
+  }
+}
