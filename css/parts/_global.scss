@@ -1,0 +1,38 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-style: normal;
+  font-family: var(--ff-1);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  color: var(--col-1);
+  position: relative;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+input,
+textarea,
+a,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+}
