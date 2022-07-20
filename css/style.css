@@ -104,3 +104,15 @@ button {
   line-height: inherit;
   letter-spacing: inherit;
 }
+
+.wrapper {
+  max-width: 1390px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.page-header__top {
+  display: grid;
+  grid-template-columns: repeat(5, 192px 266px 192px 156px 305px);
+  gap: 32px;
+}
