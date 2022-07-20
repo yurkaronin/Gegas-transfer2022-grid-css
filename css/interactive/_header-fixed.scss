@@ -1,0 +1,44 @@
+.header-fixed {
+  .header {
+    background-color: var(--col-2);
+    color: var(--col-1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+
+    &__btn {
+      color: var(--col-1);
+      border-color: var(--col-1);
+      background-color: transparent !important;
+    }
+
+    &__logo {
+      &--wh {
+        display: none;
+        opacity: 0;
+      }
+
+      &--black {
+        display: block;
+        opacity: 1;
+      }
+    }
+  }
+
+  .btn-menu {
+    border-color: var(--col-1);
+
+    span,
+    span::after,
+    span::before {
+      background-color: var(--col-1);
+    }
+  }
+  
+// cccccombo!!! 
+  &.menu-show .btn-menu span {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
