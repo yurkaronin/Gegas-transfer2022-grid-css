@@ -7,7 +7,7 @@
   text-align: center;
   color: var(--col-1);
   margin: 0;
-  margin-bottom: 3px;
+  margin-bottom: 16px;
 
   &--big {
     font-size: 74px;
@@ -15,22 +15,35 @@
     margin-bottom: 32px;
   }
 
+  &--small {
+    font-weight: 700;
+    font-size: 34px;
+  }
+
   @media (max-width: 1440px) {
     &--big {
       font-size: 62px;
     }
+    &--small {
+      font-size: 28px;
+    }
   }
+
   @media (max-width: 1024px) {
     &--big {
       font-size: 46px;
     }
   }
+
   @media (max-width: 768px) {
+    font-size: 34px;
     &--big {
       font-size: 34px;
     }
   }
+
   @media (max-width: 425px) {
+    font-size: 30px;
     &--big {
       font-size: 30px;
       margin-bottom: 16px;

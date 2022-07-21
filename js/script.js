@@ -1,5 +1,5 @@
 // Глобальные переменные Global Variables
-const menuBtn = document.querySelector('.btn-menu');
+const menuButton = document.querySelector('.button-menu');
 
 // Функция подключения скриптов Function for connecting scripts
 function include(url) {

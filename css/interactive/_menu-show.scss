@@ -5,7 +5,7 @@
     background-color: var(--col-2);
     color: var(--col-1);
 
-    &__btn {
+    &__button {
       color: var(--col-1);
       border-color: var(--col-1);
       background-color: transparent !important;
@@ -24,7 +24,7 @@
     }
   }
 
-  .btn-menu {
+  .button-menu {
     border-color: var(--col-1);
 
     span,
@@ -44,7 +44,7 @@
     transform: translateY(0);
   }
 
-  .btn-menu {
+  .button-menu {
     span {
       background-color: rgba(0, 0, 0, 0);
     }

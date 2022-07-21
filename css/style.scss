@@ -8,14 +8,18 @@
 @import "support/visually-hidden";
 // blocks
 @import "blocks/social-list";
-@import "blocks/btn";
-@import "blocks/btn-menu";
+@import "blocks/button";
+@import "blocks/button-menu";
 @import "blocks/wrapper";
 @import "blocks/title";
 @import "blocks/subtitle";
+@import "blocks/section";
+@import "blocks/card";
+
 // sections
 @import "sections/header";
 @import "sections/first-scr";
+@import "sections/trips-chart";
 // interactive
 @import "interactive/menu-show";
 @import "interactive/header-fixed";

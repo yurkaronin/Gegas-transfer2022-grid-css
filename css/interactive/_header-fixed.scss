@@ -15,7 +15,7 @@
       display: none;
     }
 
-    &__btn {
+    &__button {
       color: var(--col-1);
       border-color: var(--col-1);
       background-color: transparent !important;
@@ -38,7 +38,7 @@
     fill: var(--col-1);
   }
 
-  .btn-menu {
+  .button-menu {
     border-color: var(--col-1);
 
     span,
@@ -49,7 +49,7 @@
   }
   
 // cccccombo!!! 
-  &.menu-show .btn-menu span {
+  &.menu-show .button-menu span {
     background-color: rgba(0, 0, 0, 0);
   }
 

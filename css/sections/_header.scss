@@ -86,7 +86,7 @@
     justify-self: flex-end;
   }
 
-  &__btn {
+  &__button {
     width: 100%;
   }
 
@@ -196,7 +196,7 @@
       font-size: 16px;
     }
 
-    &__btn {
+    &__button {
       background-color: transparent;
       border-color: var(--col-2);
       color: var(--col-2);
@@ -239,7 +239,7 @@
       display: none;
     }
 
-    &__btn {
+    &__button {
       display: none;
     }
 
