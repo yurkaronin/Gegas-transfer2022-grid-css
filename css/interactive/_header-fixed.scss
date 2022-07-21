@@ -7,6 +7,13 @@
     top: 0;
     z-index: 9;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    animation-name: show-header;
+    animation-duration: 0.4s;
+    padding: 21px 0;
+
+    &__content {
+      display: none;
+    }
 
     &__btn {
       color: var(--col-1);
@@ -27,6 +34,10 @@
     }
   }
 
+  .social-list__link svg path {
+    fill: var(--col-1);
+  }
+
   .btn-menu {
     border-color: var(--col-1);
 
@@ -40,5 +51,15 @@
 // cccccombo!!! 
   &.menu-show .btn-menu span {
     background-color: rgba(0, 0, 0, 0);
+  }
+
+  @media (max-width: 1024px) {
+    .header {
+      padding: 0;
+
+      &__content {
+        display: flex;
+      }
+    }
   }
 }

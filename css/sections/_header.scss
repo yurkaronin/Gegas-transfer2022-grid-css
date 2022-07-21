@@ -1,0 +1,258 @@
+.header {
+  font-family: var(--ff-1);
+  color: var(--col-2);
+
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+
+  &__content {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    padding-top: 20px;
+    justify-content: space-between;
+    padding-bottom: 21px;
+    z-index: 12;
+  }
+
+  &__left {
+    width: 520px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  &__logo {
+    display: block;
+    width: 190px;
+
+    &--black {
+      display: none;
+      opacity: 0;
+    }
+
+    &--wh {
+      display: block;
+      opacity: 1;
+    }
+  }
+
+  &__text {
+    width: 305px;
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    color: inherit;
+  }
+
+  &__center {
+    width: 415px;
+    display: flex;
+    align-items: center;
+    gap: 12px 32px;
+
+  }
+
+  &__social {
+    width: 190px;
+  }
+
+  &__tel-wrapper {
+    flex-basis: 165px;
+    flex-grow: 2;
+    color: inherit;
+  }
+
+  &__tel {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.1;
+    text-align: center;
+    color: inherit;
+    display: block;
+    text-decoration: none;
+    transition: all .3s;
+
+    &:hover {
+      color: var(--col-3);
+    }
+  }
+
+  &__right {
+    width: 305px;
+    justify-self: flex-end;
+  }
+
+  &__btn {
+    width: 100%;
+  }
+
+  &__nav-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    color: inherit;
+  }
+
+  &__nav-link {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.1;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    position: relative;
+    transition: all .3s;
+
+    @media (hover:hover) {
+      padding-bottom: 6px;
+
+      &::after {
+        bottom: 0;
+        left: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        width: 0%;
+        background-color: var(--col-2);
+        position: absolute;
+        transition: all .3s;
+      }
+
+      &:hover {
+        color: var(--col-3);
+
+        &::after {
+          width: 100%;
+          background-color: var(--col-3);
+        }
+      }
+    }
+
+  }
+
+  // adaptive style
+  @media (max-width: 1440px) {
+    &__content {
+      gap: 16px;
+    }
+
+    &__left {
+      width: max-content;
+      display: block;
+    }
+
+    &__text {
+      display: none;
+    }
+
+  }
+
+  @media (max-width: 1024px) {
+    &__content {
+      gap: 12px;
+      padding: 10px 0;
+    }
+
+    &__logo {
+      width: auto;
+      height: 50px;
+    }
+
+    &__text {
+      display: block;
+      width: 205px;
+      font-size: 12px;
+    }
+
+    &__left {
+      display: flex;
+      gap: 12px;
+    }
+
+    &__social {
+      display: none;
+    }
+
+    &__center {
+      display: block;
+      width: initial;
+    }
+
+    &__right {
+      display: grid;
+      gap: 16px;
+      align-items: center;
+      grid-template-columns: 160px 45px;
+      width: max-content;
+    }
+
+    &__tel {
+      font-size: 16px;
+    }
+
+    &__btn {
+      background-color: transparent;
+      border-color: var(--col-2);
+      color: var(--col-2);
+    }
+
+    &__nav {
+      position: absolute;
+      left: 0;
+      right: 0;
+      background: var(--col-2);
+      color: var(--col-1);
+      min-height: calc(100vh - 70px);
+      width: 100%;
+      padding: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s;
+
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(-120%);
+    }
+
+    &__nav-list {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+    }
+
+    &__nav-link {
+      font-size: 22px;
+    }
+
+  }
+
+  @media (max-width: 768px) {
+    &__center {
+      display: none;
+    }
+
+    &__btn {
+      display: none;
+    }
+
+    &__right {
+      display: block;
+    }
+
+  }
+
+  @media (max-width: 450px) {
+    &__text {
+      display: none;
+    }
+  }
+
+}
